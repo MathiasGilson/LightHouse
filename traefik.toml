@@ -11,11 +11,13 @@ defaultEntryPoints = ["http", "https"]
 
 [acme]
 email = "mathias.gilson@outlook.com"
+dnsProvider = "cloudflare"
 storage = "/etc/acme.json"
 entryPoint = "https"
 onHostRule = true
 onDemand = false
-dnsProvider = "cloudflare"
+[[acme.domains]]
+main = "github-lighthouse.me"
 
 # Enable Docker configuration backend
 [docker]
@@ -26,6 +28,7 @@ endpoint = "unix:///var/run/docker.sock"
 # Enable watch docker changes
 watch = true
 
+domain = "github-lighthouse.me"
 
 [accessLog]
 filePath = "/tmp/logs.log"

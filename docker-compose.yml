@@ -12,11 +12,12 @@ services:
     environment:
       - NODEJS_PORT=3000
       - NODEJS_IP=0.0.0.0
-      - GITHUB_TOKEN=""
+      - GITHUB_TOKEN=<INSERT_YOUR_GITHUB_TOKEN>
       - MONGODB_DB_URL=mongodb://mongo/lighthouse
     labels:
       - traefik.enable=true
       - traefik.backend=lighthouse_app
+      - traefik.frontend.rule=Host:www.github-lighthouse.me,github-lighthouse.me
       - traefik.docker.network=lighthouse_proxy
       - traefik.port=3000
     ports:

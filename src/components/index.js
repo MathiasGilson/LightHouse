@@ -38,7 +38,7 @@ module.exports = class App extends React.Component {
 
 	renderContent = () => {
 		if (this.state.loading) {
-			return <div styleName="loader">Scanning the ocean of code...</div>
+			return <div styleName="loader">Scanning for devs in distress...</div>
 		}
 		return <List repos={this.state.repos} />
 	}
