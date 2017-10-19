@@ -8,6 +8,9 @@ if [ -z "$NAME" ]; then
   exit 1
 fi
 
+echo "coping config files"
+docker-machine scp -r ./traefik.toml $NAME:/traefik/traefik.toml
+
 say -v Alex deploying $NAME
 echo "deploying $NAME"
 eval $(docker-machine env $NAME)

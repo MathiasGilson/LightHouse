@@ -1,6 +1,6 @@
 import "whatwg-fetch"
 
-const baseUrl = "http://159.89.12.25/api/"
+const baseUrl = "https://github-lighthouse.me/api/"
 
 const get = (url, headers) =>
 	fetch(baseUrl + url, {
