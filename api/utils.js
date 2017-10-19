@@ -56,5 +56,4 @@ const getCommitFrequency = res => res.data.reduce((acc, day) => acc + day[2], 0)
 const getLightHouseScore = repo =>
 	repo.open_issues_score / (repo.commit_frequency * 1000) * Math.max(repo.watchers_count, repo.forks_count)
 
-
 module.exports = { search }

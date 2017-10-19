@@ -1,0 +1,136 @@
+.container__CYvN_aP {
+  height: 100%;
+  width: 100%; }
+
+@keyframes blink-animation__103fwek {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+.header__1YsPs5X {
+  height: 50vh;
+  width: 100%;
+  background-color: #34415C;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .header__1YsPs5X .logo__3PQUaxF {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none; }
+    .header__1YsPs5X .logo__3PQUaxF.loading__vbYtGLO {
+      animation: blink-animation__103fwek 2s ease-in-out infinite; }
+  .header__1YsPs5X .content__fWkyr4p {
+    z-index: 10;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .header__1YsPs5X .content__fWkyr4p .title__2RQns_P {
+      margin-bottom: 100px;
+      font-size: 3em; }
+    .header__1YsPs5X .content__fWkyr4p input {
+      width: 100%;
+      color: #fff;
+      font-size: 25px;
+      background-color: transparent;
+      border: none;
+      margin-bottom: -1px;
+      border-bottom: 2px solid #fff; }
+
+.wrapper__3T6QY1i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #222E49; }
+
+.loader__2Hm7vFA {
+  margin-top: 50px;
+  font-size: 20px; }
+
+.list__2AYq-x0 .content__fWkyr4p {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 620px;
+  margin-top: 35px; }
+  .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 10px;
+    margin: 10px;
+    width: 164px; }
+    .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ:hover {
+      border: 1px solid #fff; }
+    .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ .name__3ri6_G6 {
+      font-size: 20px; }
+    .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ .score__31DtmPX {
+      font-size: 15px;
+      padding-top: 8px; }
+html {
+  min-height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: #222E49;
+  color: #fff;
+  width: 100%;
+  min-height: 100%;
+  font-family: 'helvetica neue';
+  -webkit-overflow-scrolling: touch; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+		not supported by any browser */ }
+
+a {
+  text-decoration: none; }
+
+#react-app {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+*:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.6); }
+
+/*# sourceMappingURL=app.css.map*/

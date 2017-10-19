@@ -1,0 +1,81 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint-config-airbnb",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": [
+          "jsx",
+          "experimentalObjectRestSpread"
+        ]
+    },
+    "plugins": [
+        "react",
+        "babel",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", {
+            "useTabs": true,
+            "tabWidth": 4,
+            "semi": false,
+            "bracketSpacing": true,
+            "printWidth": 110
+        }],
+        "curly": [
+            "error", 
+            "all"
+        ],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "max-len": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-console": "off",
+        "no-tabs": "off",
+        "no-mixed-operators": "off",
+        "jsx-quotes": "off",
+        "react/prop-types": "off",
+        "react/jsx-uses-vars": [2],
+        "react/jsx-indent-props": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-filename-extension": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "indent": [1,"tab",{"SwitchCase": 1}],
+        "react/jsx-uses-react": 2,
+        "react/sort-comp": 0,
+        "no-redeclare": 1,
+        "comma-dangle": "off",
+        "no-underscore-dangle": "off",
+        "jsx-a11y/no-static-element-interactions" : "off",
+        "class-methods-use-this": "off",
+        "no-plusplus": "off",
+        "brace-style": "off",
+        "quotes": "off",
+        "no-return-assign": "off",
+        "no-nested-ternary": "off",
+        "arrow-parens": "off",
+        "no-param-reassign": "off"
+    },
+    "globals": {
+        "grecaptcha": true,
+        "google": true,
+        "Modernizr": true,
+        "StripeCheckout": true,
+        "io": true,
+        "fbq": true
+    }
+}
