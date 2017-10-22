@@ -36,13 +36,13 @@ Then generate your nice js bundle and css file with the command `npm run build`
 
 The frontend is developed using React.js and CSS modules. Each component is styled with it's own or shared style.scss file.
 
-We serve it using github pages because it's free lol
+We serve it using github pages because it's free
 
 
 ## Backend
 
 We use heroku to serve the logic of the app and a scheduled job run it for a list of famous frameworks to speedup the loading time. It generates a js files containing the lists of repos for these frameworks and stores it in the github repo. It's a hacky way to store data without paying.
-Once again we're poor lol
+Once again we're poor.
 
 
 ## How does it works ?
