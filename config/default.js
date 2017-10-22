@@ -1,10 +1,6 @@
 module.exports = {
 	env: "production",
 
-	endpoints: {
-		api: "http://138.68.105.49/"
-	},
-
 	server: {
 		port: process.env.NODEJS_PORT || 8080,
 		ip: process.env.NODEJS_IP || "127.0.0.1",
