@@ -13,10 +13,16 @@ module.exports = props => (
 			<div styleName="title">GitHub LightHouse</div>
 			<input
 				type="text"
+				value={props.value}
 				onChange={props.onChange}
 				onKeyPress={props.handleKeyPress}
 				placeholder="In what language/framework you want to contribute ?"
 			/>
+			{props.displayCancel ? (
+				<div styleName="dismiss" onClick={props.onCancel}>
+					Retour
+				</div>
+			) : null}
 		</div>
 	</div>
 )
