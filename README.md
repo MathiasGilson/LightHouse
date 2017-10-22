@@ -3,7 +3,7 @@
 
 ## A Lighthouse you say?
 
-Through the tempests of issues we've built a lighthouse to help benevolent devs locate projects sinking under the pressure of fame. If you feel kind-hearted enough to help a fellow dev, pass by our [Lighthouse](https://mathiasgilson.github.io/LightHouse).
+Through the tempests of issues we've built a lighthouse to shed a light on projects sinking under the pressure of fame and not having enough crew to fix all the issues. If you feel kind-hearted enough to help a fellow dev, pass by our [Lighthouse](https://mathiasgilson.github.io/LightHouse).
 
 ## Does it run locally?
 
