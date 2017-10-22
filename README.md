@@ -17,7 +17,7 @@ Yes it does!
 - run `docker-compose up --build -d`
 - run `npm install`
 - either define the github token in the `config/default.js` or in the environment variable `GITUHB_TOKEN` (`export GITHUB_TOKEN=YourRoken`)
-- run `node index.js` 
+- run `node index.js`
 - open `index.html` in your favorite web browser
 
 

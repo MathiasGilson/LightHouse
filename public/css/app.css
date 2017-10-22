@@ -59,11 +59,16 @@
   margin-top: 50px;
   font-size: 20px; }
 
+.dismiss__Ti0ytvc {
+  position: absolute;
+  cursor: pointer; }
+
 .list__2AYq-x0 .content__fWkyr4p {
   display: flex;
   flex-wrap: wrap;
   max-width: 620px;
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-bottom: 100px; }
   .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ {
     color: #fff;
     padding: 10px;
@@ -74,7 +79,8 @@
     .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ:hover {
       border: 1px solid #fff; }
     .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ .name__3ri6_G6 {
-      font-size: 20px; }
+      font-size: 20px;
+      word-wrap: break-word; }
     .list__2AYq-x0 .content__fWkyr4p .repo__32iT_BZ .score__31DtmPX {
       font-size: 15px;
       padding-top: 8px; }
