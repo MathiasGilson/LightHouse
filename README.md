@@ -1,7 +1,7 @@
 # GitHub LightHouse
 
 ### Website
-Check out the website [mathiasgilson.github.io/LightHouse](https://mathiasgilson.github.io/LightHouse)
+Check out the website [mathiasgilson.github.io/LightHouse](https://mathiasgilson.github.io/LightHouse/)
 
 ### Deploy the backend
 The backend is deployable with docker-compose
