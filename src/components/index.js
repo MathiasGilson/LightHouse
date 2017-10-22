@@ -48,7 +48,8 @@ module.exports = class App extends React.Component {
 
 	onCancel = () => this.setState({ repos: [], value: "" })
 
-	onSelect = domain => this.setState({ value: domain, repos: this.state.domains.find(d => d.name === domain).repos })
+	onSelect = domain =>
+		this.setState({ value: domain, repos: this.state.domains.find(d => d.name === domain).repos })
 
 	renderContent = () => {
 		const { loading, repos, domains } = this.state

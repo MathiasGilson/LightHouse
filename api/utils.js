@@ -10,6 +10,8 @@ github.authenticate({
 	token: config.get("gitHubToken")
 })
 
+const OVER_NINE_THOUSAND = 9001
+
 const search = (q, sort = "stars") =>
 	github.search
 		.repos({ q, sort, per_page: 10 })
@@ -54,6 +56,8 @@ const search = (q, sort = "stars") =>
 const getCommitFrequency = res => res.data.reduce((acc, day) => acc + day[2], 0) / res.data.length
 
 const getLightHouseScore = repo =>
-	repo.open_issues_score / (repo.commit_frequency * 1000) * Math.max(repo.watchers_count, repo.forks_count)
+	repo.open_issues_score /
+	(repo.commit_frequency * OVER_NINE_THOUSAND) *
+	Math.max(repo.watchers_count, repo.forks_count)
 
 module.exports = { search }

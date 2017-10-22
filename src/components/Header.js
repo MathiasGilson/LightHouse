@@ -11,6 +11,10 @@ module.exports = props => (
 		/>
 		<div styleName="content">
 			<div styleName="title">GitHub LightHouse</div>
+			<div styleName="subtitle">
+				Want to help devs in distress? peek through the lighthouse and contribute to great projects at
+				sea!
+			</div>
 			<input
 				type="text"
 				value={props.value}

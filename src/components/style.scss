@@ -16,7 +16,7 @@
 }
 
 .header {
-	height: 50vh;
+	height: 70vh;
 	width: 100%;
 	background-color: #34415C;
 	display: flex;
@@ -26,7 +26,7 @@
 	.logo {
 		position: absolute;
 		width: 100%;
-		height: 50%;
+		height: 70%;
 		background-position-x: left;
 		background-position-y: bottom;
 		background-repeat: no-repeat;
@@ -47,8 +47,15 @@
 		justify-content: center;
 		flex-direction: column;
 		.title {
-			margin-bottom: 100px;
 			font-size: 3em;
+		}
+
+		.subtitle {
+			margin-bottom: 60px;
+			margin-top: 10px;
+			font-size: 1em;
+			text-align: center;
+			max-width: 380px;
 		}
 
 		input {
@@ -79,6 +86,8 @@
 .dismiss {
 	position: absolute;
 	cursor: pointer;
+	margin-left: 275px;
+	margin-top: 80px;
 }
 
 .list {

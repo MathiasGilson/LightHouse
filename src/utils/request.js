@@ -26,5 +26,4 @@ const post = (url, body) =>
 		.then(responseText => JSON.parse(responseText))
 		.catch(error => console.log(error))
 
-
 module.exports = { get, post }
