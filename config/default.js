@@ -11,5 +11,5 @@ module.exports = {
 
 	gitHubToken: process.env.GITHUB_TOKEN,
 
-	cachedDomains: ["react", "vuejs", "c++", "node.js", "javascript", "graphql", "mongodb", "git"]
+	cachedDomains: ["react", "vuejs", "c++", "node.js", "javascript", "graphql", "mongodb", "git", "perl"]
 }
