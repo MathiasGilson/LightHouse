@@ -13,8 +13,10 @@ Yes it does!
 ## But how do I start it?
 
  Simply:
-
+Run in docker
 - run `docker-compose up --build -d`
+
+Run locally
 - run `npm install`
 - either define the github token in the `config/default.js` or in the environment variable `GITUHB_TOKEN` (`export GITHUB_TOKEN=YourRoken`)
 - run `npm start`
