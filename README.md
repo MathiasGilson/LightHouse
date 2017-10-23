@@ -12,27 +12,31 @@ Yes it does!
 
 ## But how do I start it?
 
- Simply:
- 
 Run in docker
+
+- define the github token in the environment variable `GITHUB_TOKEN` in the *docker-compose.yml* file
 - run `docker-compose up --build -d`
 
 Run locally
-- run `npm install`
-- either define the github token in the `config/default.js` or in the environment variable `GITUHB_TOKEN` (`export GITHUB_TOKEN=YourRoken`)
+
+- run `npm install --production`
+- define the github token in the environment variable `GITHUB_TOKEN` (`export GITHUB_TOKEN=YourRoken`)
 - run `npm start`
 - open `index.html` in your favorite web browser
 
 
 ## Development and production
 
-Start the webpack watcher by running `npm run webpack`
-Changes on the files will regenerate the css and js resources
+Install the dependencies using `npm install`
 
-As this project uses CSS Modules the stylesheets are injected in the html page and not compiled in a file. For production you might want to have a unique css file for catching purposes
+Start the webpack watcher by running `npm run webpack`
+Changes on the files will regenerate the css and js resources.
+
+As this project uses CSS Modules the stylesheets are injected in the html page and not compiled in a file. For production you might want to have a unique css file for catching purposes.
+
 So when you are happy with your changes check if the linter is happy by using `npm run linter` no errors means that he's happy, this guy is not very chatty
 
-Then generate your nice js bundle and css file with the command `npm run build`
+Then generate your nice js bundle and css file with the command `npm run build` it will check if the code is linted and then build the frontend.
 
 
 ## Frontend
@@ -44,9 +48,7 @@ We serve it using github pages because it's free
 
 ## Backend
 
-We use heroku to serve the logic of the app and a scheduled job run it for a list of famous frameworks to speedup the loading time. It generates a js files containing the lists of repos for these frameworks and stores it in the github repo. It's a hacky way to store data without paying.
-Once again we're poor.
-
+We use heroku to serve the logic of the app and a scheduled job run it for a list of famous frameworks to speedup the loading time. It generates a js files containing the lists of repos for these frameworks and stores it in the github repo. It's a hacky way to store data without paying but it works.
 
 ## How does it works ?
 

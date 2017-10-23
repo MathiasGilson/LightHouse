@@ -14,7 +14,7 @@ const OVER_NINE_THOUSAND = 9001
 
 const search = (q, sort = "stars") =>
 	github.search
-		.repos({ q, sort, per_page: 10 })
+		.repos({ q, sort, per_page: 60 })
 		.then(res => {
 			return res.data.items
 		})
@@ -35,7 +35,7 @@ const search = (q, sort = "stars") =>
 					.getForRepo({
 						owner: repo.owner.login,
 						repo: repo.name,
-						per_page: 10,
+						per_page: 50,
 						sort: "updated",
 						direction: "asc"
 					})
