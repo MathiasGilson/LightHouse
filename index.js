@@ -1,6 +1,4 @@
 const config = require("config")
-const mongoose = require("mongoose")
-mongoose.Promise = require("bluebird")
 
 // express settings
 const bodyParser = require("body-parser"),
@@ -30,18 +28,9 @@ app.use("/api", require("./api"))
 
 const server = require("http").Server(app)
 
-mongoose
-	.connect(config.get("server.db.uri"), { useMongoClient: true })
-	.then(() => {
-		server.listen(config.get("server.port"), config.get("server.ip"), () => {
-			console.log("Listening at " + config.get("server.ip") + " on port " + config.get("server.port"))
-			console.log("mongo instance up and running")
-		})
-	})
-	.catch(err => {
-		console.error("Could not connect to database", err)
-		process.exit(0)
-	})
+server.listen(config.get("server.port"), config.get("server.ip"), () => {
+	console.log("Listening at " + config.get("server.ip") + " on port " + config.get("server.port"))
+})
 
 // useful for testing server
 module.exports = app
