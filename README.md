@@ -13,6 +13,7 @@ Yes it does!
 ## But how do I start it?
 
  Simply:
+ 
 Run in docker
 - run `docker-compose up --build -d`
 
