@@ -7,7 +7,7 @@
     "webpack": "NODE_ENV='dev' webpack --config webpack.dev.config.js --progress --colors --watch",
     "start": "NODE_ENV='production' node index.js",
     "start-dev": "NODE_ENV='dev' node index.js",
-    "build": "NODE_ENV='production' webpack --config webpack.config.js --progress --colors",
+    "build": "npm run linter && NODE_ENV='production' webpack --config webpack.config.js --progress --colors",
     "linter": "./node_modules/.bin/eslint src --color"
   },
   "repository": {
